@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:practice_app/text_libs/hyper_link.dart';
+
+import 'text_libs/use_linkify.dart';
 
 var kColorScheme = ColorScheme.fromSeed(seedColor: Colors.redAccent);
 
@@ -31,9 +32,7 @@ class MyApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: kColorScheme.onSecondary.withOpacity(0.8),
       ),
-      home: const MyHomePage(
-        title: 'Navigation Links',
-      ),
+      home: const LinkiFy(),
     );
   }
 }
