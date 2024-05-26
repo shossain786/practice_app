@@ -17,19 +17,31 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blue,
-          brightness: Brightness.dark,
-        ),
-        scaffoldBackgroundColor: kColorScheme.onSecondary.withOpacity(0.9),
-        appBarTheme: AppBarTheme(
-          color: kColorScheme1.onSecondaryContainer,
-          foregroundColor: kColorScheme1.onSecondary,
-          centerTitle: true,
-          elevation: 5,
-        ),
-      ),
+          useMaterial3: true,
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: Colors.blue,
+            brightness: Brightness.dark,
+          ),
+          scaffoldBackgroundColor: kColorScheme.onPrimary,
+          appBarTheme: AppBarTheme(
+            color: kColorScheme1.onSecondaryContainer,
+            foregroundColor: kColorScheme1.onSecondary,
+            centerTitle: true,
+            elevation: 5,
+          ),
+          bottomNavigationBarTheme: BottomNavigationBarThemeData(
+            unselectedItemColor: kColorScheme1.onSecondaryContainer,
+            selectedLabelStyle:
+                TextStyle(color: kColorScheme1.onSecondaryContainer),
+            unselectedLabelStyle:
+                TextStyle(color: kColorScheme1.onSecondaryContainer),
+          ),
+          floatingActionButtonTheme: FloatingActionButtonThemeData(
+            backgroundColor: kColorScheme1.onPrimary,
+            focusColor: kColorScheme1.onPrimaryContainer,
+            splashColor: Colors.blue,
+            hoverColor: Colors.blue.shade500,
+          )),
       home: const MyNavBarPage(),
     );
   }
