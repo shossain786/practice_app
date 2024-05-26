@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:practice_app/main.dart';
 import 'package:practice_app/navbar_floating_btn/nav_bar_floating_btn_main.dart';
 
 class MyNavBarPage extends StatefulWidget {
